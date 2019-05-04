@@ -1,0 +1,36 @@
+.clean-button {
+	border: none;
+	background: none;
+}
+
+
+.btn {
+	@extend .clean-button;
+	border-radius: 6px;
+	font-size: 1.7rem;
+
+	&--medium {
+		padding: 1.5rem;
+	}
+
+	&--large {
+		padding: 1.5rem 4rem;
+	}
+
+	&--mgr2 {
+		margin-right: 2rem;
+	}
+	&--orange {
+		background-image: linear-gradient(-135deg, #FFE641 0%, #FF8E64 100%);
+		color: $white;
+		}
+
+		&--green {
+			background-image: linear-gradient(-135deg, #009FC5 0%, #3CECB0 100%);
+		}
+
+		&--white {
+			background-color: $white;
+			color: $title;
+		}
+}

@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $NunitoSans;
+	font-weight: 400;
+	background: $background;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $links;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+strong {
+	font-weight: 900;
+}
+input, textarea, select, button {
+	font: inherit;
+}

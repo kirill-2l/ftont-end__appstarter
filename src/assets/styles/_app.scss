@@ -1,0 +1,52 @@
+@import 'normalize.css';
+
+/*
+  Libs
+*/
+//@import '~bootstrap/scss/bootstrap';
+// @import '../libs/bootstrap/bootstrap';
+// @import '../libs/slick/fix-slick.scss';
+// @import "~slick-carousel/slick/slick.scss";
+// @import "~slick-carousel/slick/slick-theme.scss";
+	@import "~magnific-popup/dist/magnific-popup";
+
+/*
+  Base
+*/
+
+@import './base/fonts';
+
+/*
+  Utils
+*/
+
+@import './utils/dimensions';
+@import './utils/mixins';
+@import './utils/colors';
+@import './utils/keyframes';
+
+/*
+  Components
+*/
+
+@import './components/header';
+@import './components/navigation';
+@import './components/hamburger';
+@import './components/footer';
+@import './components/button';
+@import './components/link';
+
+/*
+  Layout
+*/
+
+@import './layout/page';
+@import './layout/general';
+
+/*
+  Pages
+*/
+
+@import './pages/index';
+// @import './pages/blog';
+// @import './pages/contact';
