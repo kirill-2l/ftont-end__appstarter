@@ -11,10 +11,26 @@
 
 	&--medium {
 		padding: 1.5rem;
+
+		@include media-breakpoint-down(sm) {
+			padding: 1rem;
+			font-size: 1.4rem;
+		}
 	}
 
 	&--large {
 		padding: 1.5rem 4rem;
+
+		@include media-breakpoint-down(lg) {
+			padding: 1rem 2rem;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 1rem 1.5rem;
+			font-size: 1.4rem;
+		}
+
+
 	}
 
 	&--mgr2 {

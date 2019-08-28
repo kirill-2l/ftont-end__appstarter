@@ -16,11 +16,10 @@ block content
 				.first-screen__heading
 					strong AppStarter.
 					|  Best landing page for web and mobile apps
-				.first-screen__buttons
-					a.btn.btn--orange.btn--medium.btn--mgr2(href="#") Download Now
-					a.btn.btn--white.btn--medium(href="#") Watch Video
-			.first-screen__block2
-				img.first-screen__img(src="/assets/images/first-screen__ipad.png", alt="ipad")
+				button.btn.btn--orange.btn--medium.btn--mgr2(href="#") Download Now
+				button.btn.btn--white.btn--medium(href="#") Watch Video
+			img.first-screen__block2(src="/assets/images/first-screen__ipad.png", alt="ipad")
+
 
 	section.features
 		.container
@@ -30,7 +29,7 @@ block content
 			.features__cards
 				.features__card
 					.features__card-wrapper
-						img.features__icon.img-fluid(src="/assets/images/features__1.svg", alt="sync")
+						img.features__icon(src="/assets/images/features__1.svg", alt="sync")
 						.features__title
 							strong Sync
 							|  across all devices
@@ -38,7 +37,7 @@ block content
 						a.features__link(href="#") Watch video
 				.features__card
 					.features__card-wrapper
-						img.features__icon.img-fluid(src="/assets/images/features__2.svg", alt="sync")
+						img.features__icon(src="/assets/images/features__2.svg", alt="sync")
 						.features__title
 							strong All emails
 							|  in one place
@@ -46,7 +45,7 @@ block content
 						a.features__link(href="#") Watch video
 				.features__card
 					.features__card-wrapper
-						img.features__icon.img-fluid(src="/assets/images/features__3.svg", alt="sync")
+						img.features__icon(src="/assets/images/features__3.svg", alt="sync")
 						.features__title
 							strong Notifications
 							|  about sales
@@ -56,18 +55,18 @@ block content
 	section.press
 		.container
 			.press__wrapper
-				a(href="#")
-					img.press__item.img-fluid(src="/assets/images/press__wired.png", alt="wired")
-				a(href="#")
-					img.press__item.img-fluid(src="/assets/images/press__lifehacker.png", alt="lifehacker")
-				a(href="#")
-					img.press__item.img-fluid(src="/assets/images/press__mashable.png", alt="mashable")
-				a(href="#")
-					img.press__item.img-fluid(src="/assets/images/press__verge.png", alt="verge")
-				a(href="#")
-					img.press__item.img-fluid(src="/assets/images/press__gizmodo.png", alt="gizmodo")
-				a(href="#")
-					img.press__item.img-fluid(src="/assets/images/press__macworld.png", alt="macworld")
+				.press__items
+					img(src="/assets/images/press__wired.png", alt="wired")
+
+					img(src="/assets/images/press__lifehacker.png", alt="lifehacker")
+
+					img(src="/assets/images/press__mashable.png", alt="mashable")
+
+					img(src="/assets/images/press__verge.png", alt="verge")
+
+					img(src="/assets/images/press__gizmodo.png", alt="gizmodo")
+
+					img(src="/assets/images/press__macworld.png", alt="macworld")
 
 	section.highlights
 		.container
@@ -105,8 +104,8 @@ block content
 					.download__description
 						| This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.
 				.download__block2
-					a.btn.btn--orange.btn--large.btn--mgr2 Buy for 24$
-					a.btn.btn--white.btn--large Try it Free
+					a.btn.btn--orange.btn--large.btn--mgr2(href="#") Buy for 24$
+					a.btn.btn--white.btn--large(href="#") Try it Free
 
 	section.screens
 		.container
@@ -147,16 +146,107 @@ block content
 
 
 	section.reviews
+		.reviews__title.title
+			strong Customers
+			|  about AppStarter
 		.reviews__sidebar
 			.sidebar
-				.sidebar__title
-				.sidebar__read-more Read more reviews:
-					a.sidebar__link
-					a.sidebar__link
+				img.sidebar__rating.img-fluid(src="/assets/images/reviews__star.svg", alt="rating star")
+				.sidebar__title.title
+					strong Customers
+					|  about&nbsp;Appstarter
+				.sidebar__read-more
+					.read-more
+						.read-more__title Read more reviews:
+						.read-more__links
+							a.read-more__link(href="#")
+								strong App Store
+							a.read-more__link(href="#")
+								strong Google Play
 		.reviews__list
 			.review
-				.review__author
-					strong Eliza Paul
-					|  - Web Designer
-				a.review__twitter(href="#")
-					img(src="/assets/images/review__twitter", alt="twitter")
+				.review__content
+					.review__avatar.review__avatar--left
+						img(src="/assets/images/reviews__ava1.png", alt="Eliza Paul")
+					.review__description
+						| This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.
+				.author
+					.author__name
+						strong Eliza Paul
+						|  - Web Designer
+					a.author__twitter(href="http://twitter.com" target="_blank")
+						img(src="/assets/images/reviews__twitter.svg", alt="twitter")
+			.review.review--reverse
+				.review__content
+					.review__description
+						| This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.
+					.review__avatar.review__avatar--right
+						img(src="/assets/images/reviews__ava2.png", alt="Eliza Paul")
+				.author
+					a.author__twitter(href="http://twitter.com" target="_blank")
+						img(src="/assets/images/reviews__twitter.svg", alt="twitter")
+					.author__name
+						strong Juan Richards
+						|  - Photographer
+			.review
+				.review__content
+					.review__avatar.review__avatar--left
+						img(src="/assets/images/reviews__ava3.png", alt="Eliza Paul")
+					.review__description
+						| This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself.
+				.author
+					.author__name
+						strong Marian McGuire
+						|  - Entrepreneur
+					a.author__twitter(href="http://twitter.com" target="_blank")
+						img(src="/assets/images/reviews__twitter.svg", alt="twitter")
+
+
+	section.tariffs
+		.tariffs__sidebar
+			.tariffs__title
+				strong Choose
+				|  your plan
+			.tariffs__description
+				| This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found herself walking.
+		.tariffs__items
+			.tariff.tariff--1
+				.tariff__substrate
+					.tariff__title professional
+				.tariff__wrapper
+					.tariff__price 10$
+					.tariff__options
+						.tariff__option Hundreds of elements
+						.tariff__option Style guide
+						.tariff__option 160 icons included
+						.tariff__option Sketch files
+						.tariff__option Commercial licence
+					button.tariff__button.btn.btn--orange.btn--large(href="#") Buy Now
+			.tariff.tariff--2
+				.tariff__substrate.tariff__substrate--2
+					.tariff__title starter
+				.tariff__wrapper
+					.tariff__price free
+					.tariff__options
+						.tariff__option.tariff__option--2 Hundreds of elements
+						.tariff__option.tariff__option--2 Style guide
+						.tariff__option.tariff__option--2 30 icons included
+						.tariff__option.tariff__option--2 Personal licence
+					button.tariff__button.btn.btn--green.btn--large(href="#") Get Free
+
+	section.stay
+		.stay__content
+			.stay__title
+				strong Stay
+				|  in touch
+			.stay__description
+				| This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment.
+		form.stay__form.form(action="#")
+			.form__lineGroup
+				.form__inputGroup
+					.form__input
+						input.form__field(type="text" name="name" placeholder="Your Name")
+					.form__input
+						input.form__field(type="email" name="email" placeholder="Your Email")
+			textarea.form__textarea(name="message", rows="10", placeholder="Message...")
+			button.btn.btn--orange.btn--large(type="submit" href="#") Send Message

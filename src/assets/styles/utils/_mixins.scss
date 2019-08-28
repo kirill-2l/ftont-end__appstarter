@@ -30,3 +30,25 @@ div::after {
   display: $display;
   position: $pos;
 }
+
+
+/*
+* Styling placeholder
+* Example
+@include placeholder {
+  color: blue;
+}
+// Для определённых полей ввода
+.input {
+  @include placeholder {
+    color: green;
+  }
+}
+*/
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}

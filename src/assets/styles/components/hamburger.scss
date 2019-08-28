@@ -16,6 +16,7 @@
 	transition-property: opacity, filter;
 	transition-duration: 0.15s;
 	transition-timing-function: linear;
+	z-index: 2;
 
 	&__box {
 		width: 4rem;
@@ -34,7 +35,7 @@
 		&::after {
 			width: 4rem;
 			height: 0.4rem;
-			background-color: #fff;
+			background-color: #000;
 			border-radius: 0.4rem;
 			position: absolute;
 			transition-property: transform;
