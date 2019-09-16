@@ -1,0 +1,29 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$title: #282B31;
+$description: #676C75;
+$footer__copyright: #999EA8;
+$background: #F8F9FA;
+$white: #FFFFFF;
+$links: #469AF4;
+
+
+// Sizes
+$base-font-size: 16px;
+$NunitoSans: 'NunitoSans', sans-serif;
+
+$breakpoints: (
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1024px;
+
+// Fonts
