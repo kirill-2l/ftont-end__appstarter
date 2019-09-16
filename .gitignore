@@ -1,6 +1,1 @@
-.DS_store
-.idea
-build
-node_modules
-/*.exe.stackdump
-yarn-error.log
+.DS_Store
