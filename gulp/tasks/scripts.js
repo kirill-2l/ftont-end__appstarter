@@ -20,7 +20,7 @@ module.exports = function () {
 				return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js',
 				'node_modules/jquery/dist/jquery.min.js',
 				'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
-				'node_modules/scrollmagic/magnific-popup/dist/jquery.magnific-popup.min.js',
+				'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
 			])
             .pipe(concat('libs.min.js'))
             .pipe(uglify())
